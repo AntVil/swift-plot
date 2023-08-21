@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug swift-plot",
+            "program": "${workspaceFolder:swift-plot}/.build/debug/swift-plot",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-plot}",
+            "preLaunchTask": "swift: Build Debug swift-plot"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release swift-plot",
+            "program": "${workspaceFolder:swift-plot}/.build/release/swift-plot",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-plot}",
+            "preLaunchTask": "swift: Build Release swift-plot"
+        }
+    ]
+}
